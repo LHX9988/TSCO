@@ -1,4 +1,3 @@
-"""Physical and dimensional invariants; no paper outcomes are hard-coded."""
 import unittest
 import numpy as np
 from scipy import sparse
