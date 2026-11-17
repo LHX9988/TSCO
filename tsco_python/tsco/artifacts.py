@@ -1,4 +1,3 @@
-"""Write inspectable run results without embedding manuscript outcome values."""
 import json
 from pathlib import Path
 import math
