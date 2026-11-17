@@ -177,9 +177,9 @@ class CPNSimulator:
             for task in job.tasks:
                 if task.id in self.tasks or task.job_id != job.id:
                     raise ValueError(f"Non-unique task or incorrect job mapping: {task.id}")
-                if task.revenue is None:
-raise ValueError(f"Task {task.id}: revenue is required")
-if (not np.isfinite(task.workload) or task.workload <= 0
+                               if task.revenue is None:
+                    raise ValueError(f"Task {task.id}: revenue is required")
+                if (not np.isfinite(task.workload) or task.workload <= 0
                         or not np.isfinite(task.data_gb) or task.data_gb < 0
                         or not np.isfinite(task.revenue)
                         or len(task.demands) != 3 or not task.compatible
