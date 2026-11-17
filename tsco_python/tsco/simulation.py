@@ -58,7 +58,7 @@ def scenario_forecasts(dataset, case, start_interval, hours):
     if not np.isfinite(demand).all() or not np.isfinite(renewable).all() or not np.isin(modes,[-1,0,1]).all():
         raise ValueError('Planning data contain missing or invalid values.')
     if float(record['hour_dt'])!=1.:
-        raise ValueError('The manuscript uses hourly day-ahead intervals.')
+        raise ValueError('Day-ahead intervals must be one hour.')
     expected_modes=record.get('expected_value_storage_modes')
     if expected_modes is not None:expected_modes=np.asarray(expected_modes)[:hours]
     return demand[:,:hours],renewable[:,:hours],probabilities,modes[:,:hours],expected_modes
@@ -202,7 +202,7 @@ class Simulator:
                 demand=self._demand(base,cpn.reserved_power())
                 current,cmci,chead=self._signals(demand,renewable)
                 if not current.feasible:
-                    # Even deferring cannot manufacture feasible grid headroom.
+                    # Defer the task when the grid dispatch is infeasible.
                     cpn.defer(task.id,until=end)
                     continue
                 # Relaxed ED informs the first decision; later decisions receive
