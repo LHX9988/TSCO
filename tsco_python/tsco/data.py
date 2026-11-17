@@ -392,7 +392,7 @@ def load_dataset(directory, split="train", config=None):
     case = load_case(directory/"case.json")
     dt = _number(config.get("simulation", {}).get("dt_seconds", 300.), "dt_seconds")
     if dt != 300:
-        raise ValueError("The manuscript uses five-minute physical intervals")
+        raise ValueError("Physical intervals must be 300 seconds")
     with (directory/"signals.csv").open(newline="", encoding="utf-8") as handle:
         reader = csv.DictReader(handle)
         rows = list(reader)
