@@ -62,7 +62,7 @@ def _connected(case: GridCase, open_lines=()):
 
 
 class Schedule:
-    """A non-mutating disturbance schedule on the manuscript's five-minute grid.
+    """A non-mutating disturbance schedule with five-minute intervals.
 
     Overlapping demand multipliers multiply. Outage windows use ``start <=
     time < end``; equipment is restored automatically at the ending boundary.
