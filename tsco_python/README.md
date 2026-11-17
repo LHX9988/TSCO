@@ -34,7 +34,7 @@ python -m pip install -e .
 | `inputs/calibration_samples.json` | 计算归一化所需的训练样本 |
 | `inputs/manifest.json` | 输入时间范围及数据处理信息 |
 
-字段、单位和数组维度见 `docs/DATA.md`。`null` 不会被解释为零。程序不会根据均值、置信区间或汇总结果反推逐时轨迹。
+字段、单位和数组维度见 `docs/DATA.md`。
 
 已填写的名义设置包括：30 母线、6 台火电机组、4 个 BESS、5 个 CPN 站点；每站 4 MW、128/64/32 个 CPU/GPU/TPU 归一化资源单位；RES 总容量 650 MW，其中光伏 330 MW、风电 320 MW；碳价 50 美元/tCO₂，168 小时碳预算 1450 tCO₂。
 
