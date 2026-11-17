@@ -1,13 +1,9 @@
 """CS-GAQR-DQN and controlled architecture ablations.
 
-Numerical values stated in the manuscript are used explicitly. Additional
-network and optimizer values must be supplied in the configuration; the module
-does not silently complete unreported settings.
-
-The graph encoder is a dense, edge-aware GATv2 implementation: efficient for the
-paper's 5--20 computing sites, with O(N**2) temporary attention storage. It does
-not pretend to provide a sparse-O(|L|) implementation. Node/action parameters are
-shared, so graph-policy inference supports different numbers of CPN sites.
+Network and optimizer settings are supplied through the configuration.
+The graph encoder uses dense, edge-aware GATv2 attention with O(N**2)
+temporary storage. Shared node/action parameters support inference
+across different numbers of CPN sites.
 
 Observation normalization belongs to the training-data pipeline. A checkpoint
 stores architecture, optimizer and RNG state; replay is optional because the
