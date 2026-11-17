@@ -154,7 +154,7 @@ class CPNTests(unittest.TestCase):
 
     def test_revenue_and_dependency_volumes_must_be_explicit(self):
         task = Task("a", "j", 1., (1., 0., 0.), (0,), (), 0.)
-        with self.assertRaisesRegex(ValueError, "explicit revenue"):
+        with self.assertRaisesRegex(ValueError, "revenue is required"):
             CPNSimulator(1, config(), [Job("j", 0, 100, [task])])
         a = make_task("a")
         b = make_task("b", predecessors=("a",), data=8)
