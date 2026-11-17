@@ -1,164 +1,4 @@
-{
-  "files": [
-    {
-      "path": "README.md",
-      "bytes": 7311,
-      "sha256": "903b91399ce9a021fb6e3711cccf2eae98bc807bdc0d88b4921d29d6fd50e51a"
-    },
-    {
-      "path": "configs/nominal.json",
-      "bytes": 2542,
-      "sha256": "96a6ce113fdcec626385ba1c24fa92376a6ba6adc43580395eb755439b2563dc"
-    },
-    {
-      "path": "docs/DATA.md",
-      "bytes": 6157,
-      "sha256": "fd2cbe94f73b3e81551ff88bcd98ac93d81203de9ddb68e2e3f6de345d5c692f"
-    },
-    {
-      "path": "docs/SOURCES.md",
-      "bytes": 620,
-      "sha256": "438fdbea0556d5cec7cce0418ec898716c4ac8025972708277e3c35c0e386be6"
-    },
-    {
-      "path": "docs/STUDIES.md",
-      "bytes": 3177,
-      "sha256": "61f6f301f0cf9ae1e7f88eaecb44c5e46c87a7da520f88cc0496eae14e4dc195"
-    },
-    {
-      "path": "examples/disturbances_demand_decrease.json",
-      "bytes": 105,
-      "sha256": "ac47c04c03608c5845aebe8ab1c62b291f02f09e317c929dc7e36be7de7a1b07"
-    },
-    {
-      "path": "examples/disturbances_demand_increase.json",
-      "bytes": 105,
-      "sha256": "bbfdb96ac69dcc9bb024f878234ee06effebb1f736828428b43f1b6707653e1b"
-    },
-    {
-      "path": "examples/disturbances_generator.json",
-      "bytes": 107,
-      "sha256": "f9b20e61eaec70ab9aa93cc0e3371f15befb7152e7224fc912504a9aadb67f5a"
-    },
-    {
-      "path": "examples/disturbances_line.json",
-      "bytes": 149,
-      "sha256": "6f4879fcb5d6c8cd563a265b5400e88de18c2728a021a8c37e4c380590ad1ad4"
-    },
-    {
-      "path": "examples/run_seeds.py",
-      "bytes": 1594,
-      "sha256": "4deed16e4f92d5609ed086f6188af898dfcf59b6750b25aa4f42b350bb4235d5"
-    },
-    {
-      "path": "examples/run_studies.py",
-      "bytes": 3379,
-      "sha256": "fc67ecc789aa316ba684d5751ce0d0a72e2c8ab77c72ff44d796aa70dd3c2bb9"
-    },
-    {
-      "path": "inputs/calibration_samples.json",
-      "bytes": 313,
-      "sha256": "e72020f92aa86d3bda58cb08907e1354af8f6c831560e0278e8d682541357b8f"
-    },
-    {
-      "path": "inputs/case.json",
-      "bytes": 2906,
-      "sha256": "5e11810def3eaa7687153b55c16460d962da7eb1bed9a12ed964d2bf88d9b3a6"
-    },
-    {
-      "path": "inputs/initial_states.json",
-      "bytes": 544,
-      "sha256": "4896010be45cde76d1e6aa39bd44b84b445d5eb8c72d4a6d2298d135df4b8b74"
-    },
-    {
-      "path": "inputs/job_record_template.json",
-      "bytes": 342,
-      "sha256": "c52cc86aebc048da4fdfb4f00b790097cf24d20b2f42cd9a0f4be9f2c23e960a"
-    },
-    {
-      "path": "inputs/jobs.json",
-      "bytes": 18,
-      "sha256": "7985903d2cc0f9a0401ca9d648bb134b823f2728d5ffc0b88ed86252bc8044d5"
-    },
-    {
-      "path": "inputs/manifest.json",
-      "bytes": 3,
-      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
-    },
-    {
-      "path": "inputs/normalization.json",
-      "bytes": 377,
-      "sha256": "5cdec87b87ecd5fad4959551c7470502131d007e945b177652f4406e9934b4c5"
-    },
-    {
-      "path": "inputs/planning_scenarios.json",
-      "bytes": 280,
-      "sha256": "8878eb58521797babbe369d427a05c3b948612c7c884319caf73784057ea7565"
-    },
-    {
-      "path": "inputs/signals.csv",
-      "bytes": 555,
-      "sha256": "8cb04abd9e393566cddbcf997800a7c47f5561e1969676634ee2529ee984d125"
-    },
-    {
-      "path": "pyproject.toml",
-      "bytes": 496,
-      "sha256": "ec44f5f9d3b8c4bdb3e1ed586a5a3043d4d503cb5f23e994769f3af0ffaf61ee"
-    },
-    {
-      "path": "requirements-paper.txt",
-      "bytes": 74,
-      "sha256": "af132570459c26071dce34929f9d2da36e643e028403f81a99576f44017bf168"
-    },
-    {
-      "path": "requirements.txt",
-      "bytes": 78,
-      "sha256": "e6ae32ef129a2a56ee391619ab27fd3da7d7304ee14c494c4f041f7e7a5eaf68"
-    },
-    {
-      "path": "tests/test_config.py",
-      "bytes": 1679,
-      "sha256": "b97b44f03ec4c3e047f17d3b4228b6577cd5b23045f16b16957f245962425a57"
-    },
-    {
-      "path": "tests/test_cpn.py",
-      "bytes": 8173,
-      "sha256": "369ed1486cbd81d10715147f3bd3c2e068aa84a0b7dcee136033b4391ba51a5f"
-    },
-    {
-      "path": "tests/test_disturbances.py",
-      "bytes": 5844,
-      "sha256": "2d78a53aa737908c50659e9741f84e334959afc970b567ded685000dee2ffdd1"
-    },
-    {
-      "path": "tests/test_grid.py",
-      "bytes": 9883,
-      "sha256": "3512f427cee613086657c9a1833853e3c6cc39766cbaec7b6171c3774d0664e8"
-    },
-    {
-      "path": "tests/test_learning.py",
-      "bytes": 9160,
-      "sha256": "142ae85964220bf6625e569953aeea475b337c0b3b3da6f40d793631fe24d916"
-    },
-    {
-      "path": "tests/test_planning.py",
-      "bytes": 9865,
-      "sha256": "4c7f656ca38841f4bf9156254d501cf0932409c55190c78ae242ef91750fb2de"
-    },
-    {
-      "path": "tests/test_simulation.py",
-      "bytes": 6900,
-      "sha256": "702b3a524087c38ba4045998ec179c4fdf128b9db0da837af512298df06b5ace"
-    },
-    {
-      "path": "tests/test_statistics.py",
-      "bytes": 5542,
-      "sha256": "4c6d8f16e3d8985a4b6bfbf9c9b9e0784c549103ecb299655adb12dcefaf87e3"
-    },
-    {
-      "path": "tests/test_strict_controller.py",
-      "bytes": 3329,
-      "sha256": "5d370caefd8f2b49d6afe0e3ca7102734a4e3449827e3d3158852fb76bc64609"
+      "sha256": "3eb0d777aa11f6bfee8ae09d725b7515f7826877d2412deb0b4d47499400dcf8"
     },
     {
       "path": "tests/test_strict_data.py",
@@ -187,8 +27,8 @@
     },
     {
       "path": "tsco/artifacts.py",
-      "bytes": 3594,
-      "sha256": "bcde61aa84c3f548566d8781654301ffcf3894607c8ccc9fae9ec400dee91e5c"
+      "bytes": 3513,
+      "sha256": "6cfb3be8ffb52e720de72670a680b3304a607f6444532dc78e04104ab649f254"
     },
     {
       "path": "tsco/cli.py",
@@ -202,18 +42,18 @@
     },
     {
       "path": "tsco/cpn.py",
-      "bytes": 24408,
-      "sha256": "4398306cca00bb0b85d2182564bfd8bd5a83564c855581d45fc35b472e0332ca"
+      "bytes": 24191,
+      "sha256": "9fcc8a21b45000d4343dbedd42f1bf86bae70cf4cda3815e91497dab9498704f"
     },
     {
       "path": "tsco/data.py",
-      "bytes": 24942,
-      "sha256": "b231cb7678b46ba004bc4030e7a31441a9f653ad18de9ff8dd26a2a0fd415170"
+      "bytes": 24918,
+      "sha256": "b03a075694f2674f78bef17411c0d2607c1c91f976d23ae56f0b28c26a5d999b"
     },
     {
       "path": "tsco/disturbances.py",
-      "bytes": 10054,
-      "sha256": "6673be832a966a15e5274e12129ed97f0b017b2cf69e4d345abfb534f4f2e106"
+      "bytes": 9957,
+      "sha256": "fc2d51062d4582e0d5085962ce05f2a2ead9660591e9a46cd801efb075d15cc5"
     },
     {
       "path": "tsco/features.py",
@@ -227,8 +67,8 @@
     },
     {
       "path": "tsco/learning.py",
-      "bytes": 35538,
-      "sha256": "0810aeda6b8f73fb2cbb8e929d111341e80ecb9c6d2ca5fa0ba08d106e91acb8"
+      "bytes": 35074,
+      "sha256": "d23aa881b4a072dedbdccec90e11c90df45c66ff5c73dbf110250936656372ab"
     },
     {
       "path": "tsco/optimization.py",
@@ -237,8 +77,8 @@
     },
     {
       "path": "tsco/planning.py",
-      "bytes": 27356,
-      "sha256": "f80deb678539895e6ef491fbcd400ec1e60f645fc17376704defd2e95d623814"
+      "bytes": 27168,
+      "sha256": "e24cb19af9e42d7b04a0b29e4af2b982a12ad1c9958d4d96d32154adf55a862b"
     },
     {
       "path": "tsco/schema.py",
@@ -247,13 +87,13 @@
     },
     {
       "path": "tsco/simulation.py",
-      "bytes": 28336,
-      "sha256": "fd275df26a3b30eeef36ae1ad244d45d1ce9819ea136c5e75a5ec92856e2d566"
+      "bytes": 28321,
+      "sha256": "20da1d38755574de3dbd8def5c880355c77934a34a4711cdc14a968a455fb2a2"
     },
     {
       "path": "tsco/statistics.py",
-      "bytes": 13648,
-      "sha256": "0fe0b4969f09b2c4759a7cd335cb46dc07ff58abe9f5e713213223dbae915131"
+      "bytes": 13616,
+      "sha256": "6512864d6eff1b3b2124eaf40e9b099b42d813ff2191c0716441bc08bdb07e38"
     },
     {
       "path": "tsco/studies.py",
