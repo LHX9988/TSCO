@@ -12,8 +12,7 @@ Unspecified experiment inputs are not inferred: scenario/hour battery modes,
 initial physical states, minimum up/down durations, and terminal-storage policy
 must be supplied explicitly. Battery modes keep recourse linear and disallow
 simultaneous charge/discharge; this does not optimize unrestricted mixed-integer
-storage modes. The nominal paper does not provide their numerical trajectories.
-Optional outer iteration/time limits may be None (no requested limit).
+storage modes. Optional outer iteration/time limits may be None (no requested limit).
 """
 from __future__ import annotations
 
@@ -87,7 +86,7 @@ class BendersPlanner:
     Parameters are the shared configuration dictionary. The solver choice is
     explicit: requesting Gurobi never silently falls back to another solver.
     ``planning.scenario_workers`` controls independent LP workers (serial if
-    unspecified). This execution choice does not synthesize physical inputs.
+    unspecified). 
     """
     def __init__(self, case: GridCase, config: dict):
         self.case, self.config = case, config
@@ -98,8 +97,8 @@ class BendersPlanner:
     def _required(self, name):
         value = self.settings.get(name)
         if value is None:
-            raise ValueError(f'Missing manuscript implementation input: planning.{name}; supply the actual value explicitly')
-        return value
+raise ValueError(f'Missing required configuration: planning.{name}')
+return value
 
     def _duration_hours(self, name):
         hours = np.asarray(self._required(name), dtype=float)
@@ -411,8 +410,8 @@ class BendersPlanner:
                         initial_status_hours=None):
         """Solve exactly the same finite-scenario/PWL model as one MILP.
 
-        Intended for small regression cases, not a purported full-scale oracle.
-        The reported relative gap remains the actual MILP solver gap.
+Used for small-case regression checks against the Benders solution.
+The reported relative gap remains the actual MILP solver gap.
         """
         start = time.perf_counter()
         d, r, prob, u0, pg0, e0, modes, ages = self._prepare(demand_scenarios, renewable_scenarios,
