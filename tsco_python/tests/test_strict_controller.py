@@ -1,4 +1,3 @@
-"""Missing experimental inputs are rejected rather than fabricated."""
 import json
 import tempfile
 import unittest
