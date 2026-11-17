@@ -43,10 +43,7 @@ def _setting(settings: dict, name: str, default: Any, *aliases: str) -> Any:
 
 def _required_setting(settings: dict, name: str) -> Any:
     if name not in settings or settings[name] is None:
-        raise ValueError(
-            f"drl.{name} is required but is not specified in the manuscript; "
-            "provide the value used in your implementation."
-        )
+      raise ValueError(f"Missing required configuration: drl.{name}")
     return settings[name]
 
 
@@ -516,8 +513,7 @@ class DQNAgent:
                 self._emit_prefix()
 
     def learn(self) -> dict | None:
-        # The manuscript specifies beta's endpoints but neither annealing rule
-        # nor duration. Validate them when training starts, even during warm-up.
+       # Validate the PER beta schedule before training, including warm-up.
         if self.replay.alpha > 0:
             rule = _required_setting(self.settings, "anneal_rule")
             beta_steps = _required_setting(self.settings, "per_beta_steps")
