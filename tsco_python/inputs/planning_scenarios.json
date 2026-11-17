@@ -1,0 +1,14 @@
+{
+  "planning_scenarios": [
+    {
+      "start_interval": null,
+      "hour_dt": 1.0,
+      "demand_mw": null,
+      "renewable_mw": null,
+      "probabilities": null,
+      "storage_modes": null,
+      "expected_value_storage_modes": null,
+      "cpn_demand_mw": null
+    }
+  ]
+}

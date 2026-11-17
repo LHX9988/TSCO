@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tsco"
+version = "0.2.0"
+description = "CPN-grid co-optimization"
+requires-python = ">=3.11"
+dependencies = ["numpy>=1.26,<3", "scipy>=1.12,<2", "pandas>=2.2,<3", "matplotlib>=3.8,<4"]
+
+[project.optional-dependencies]
+drl = ["torch>=2.4,<3"]
+gurobi = ["gurobipy>=11,<14"]
+pypsa = ["pypsa==0.30.3"]
+
+[project.scripts]
+tsco = "tsco.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["tsco*"]

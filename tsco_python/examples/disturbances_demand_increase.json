@@ -1,0 +1,8 @@
+[
+  {
+    "kind": "demand_scale",
+    "start_hour": 0,
+    "duration_hours": 168,
+    "value": 1.2
+  }
+]

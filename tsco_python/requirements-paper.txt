@@ -1,0 +1,7 @@
+numpy
+scipy
+pandas
+matplotlib
+torch==2.4.1
+pypsa==0.30.3
+gurobipy==11.0.3

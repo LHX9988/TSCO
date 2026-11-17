@@ -1,0 +1,21 @@
+{
+  "id": null,
+  "arrival_seconds": null,
+  "deadline_seconds": null,
+  "tasks": [
+    {
+      "id": null,
+      "workload": null,
+      "demands": [
+        null,
+        null,
+        null
+      ],
+      "compatible": null,
+      "predecessor_ids": null,
+      "data_gb": null,
+      "revenue": null,
+      "edge_data_gb": null
+    }
+  ]
+}

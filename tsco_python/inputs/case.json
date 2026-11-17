@@ -1,0 +1,213 @@
+{
+  "known_paper_settings": {
+    "buses": 30,
+    "thermal_generators": 6,
+    "bess_units": 4,
+    "renewable_sites": 5,
+    "solar_sites": 3,
+    "wind_sites": 2,
+    "cpn_sites": 5,
+    "cpn_site_capacity_mw": 4.0,
+    "cpn_total_capacity_mw": 20.0,
+    "cpn_resource_units_per_site": {
+      "CPU": 128,
+      "GPU": 64,
+      "TPU": 32
+    },
+    "renewable_total_mw": 650.0,
+    "solar_total_mw": 330.0,
+    "wind_total_mw": 320.0,
+    "peak_end_use_demand_mw": 300.0
+  },
+  "renewable_types": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "case": {
+    "name": "TSCO nominal configuration",
+    "base_mva": null,
+    "base_load": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "branch_from": null,
+    "branch_to": null,
+    "branch_x": null,
+    "branch_tap": null,
+    "branch_limit": null,
+    "gen_bus": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "gen_pmin": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "gen_pmax": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "gen_ramp": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "gen_a": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "gen_b": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "gen_c": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "gen_emission": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "gen_startup": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "gen_shutdown": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "storage_bus": [
+      null,
+      null,
+      null,
+      null
+    ],
+    "storage_power": [
+      null,
+      null,
+      null,
+      null
+    ],
+    "storage_capacity": [
+      null,
+      null,
+      null,
+      null
+    ],
+    "storage_eta_c": [
+      null,
+      null,
+      null,
+      null
+    ],
+    "storage_eta_d": [
+      null,
+      null,
+      null,
+      null
+    ],
+    "storage_min": [
+      null,
+      null,
+      null,
+      null
+    ],
+    "storage_max": [
+      null,
+      null,
+      null,
+      null
+    ],
+    "renewable_bus": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "renewable_capacity": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "cpn_bus": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  }
+}

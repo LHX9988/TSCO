@@ -1,0 +1,117 @@
+{
+  "simulation": {
+    "dt_seconds": 300,
+    "horizon_hours": 168,
+    "carbon_price": 50.0,
+    "carbon_budget_t": 1450.0,
+    "budget_horizon_hours": 168,
+    "seed": 0,
+    "max_decisions_per_interval": null,
+    "max_events_per_interval": null
+  },
+  "solver": {
+    "backend": "gurobi",
+    "feasibility_tol": 1e-07,
+    "optimality_tol": 1e-07,
+    "int_feas_tol": 1e-06,
+    "mip_gap": 0.0001,
+    "threads": 8,
+    "ed_threads": 1,
+    "ed_method": 1,
+    "lp_warm_start": 2,
+    "time_limit": null,
+    "pwl_segments": 20,
+    "mci_delta_mw": 0.1,
+    "startup_ramp_mw": null,
+    "shutdown_ramp_mw": null
+  },
+  "planning": {
+    "relative_gap": 0.002,
+    "max_iterations": null,
+    "time_limit_seconds": null,
+    "min_up_hours": null,
+    "min_down_hours": null,
+    "terminal_storage": null,
+    "scenario_count": 100,
+    "horizon_hours": 24
+  },
+  "closed_loop": {
+    "rho": 0.5,
+    "epsilon_mw": 0.01,
+    "max_iterations": 10
+  },
+  "cpn": {
+    "capacities": [
+      128,
+      64,
+      32
+    ],
+    "site_peak_mw": 4.0,
+    "idle_mw": null,
+    "peak_mw": null,
+    "alpha": null,
+    "flops_per_unit_second": null,
+    "bandwidth_gbps": null,
+    "latency_seconds": null,
+    "reservation_fraction": null,
+    "deferral_seconds": null
+  },
+  "workload": {
+    "jobs_per_day": 800
+  },
+  "data": {
+    "split": [
+      0.7,
+      0.15,
+      0.15
+    ]
+  },
+  "drl": {
+    "gamma": 0.99,
+    "n_step": 3,
+    "batch_size": 256,
+    "replay_capacity": 500000,
+    "warmup_steps": 20000,
+    "learning_rate": 0.0001,
+    "grad_clip": 10.0,
+    "per_alpha": 0.6,
+    "per_beta_start": 0.4,
+    "per_beta_end": 1.0,
+    "per_beta_steps": null,
+    "anneal_rule": null,
+    "per_priority_epsilon": null,
+    "noisy_sigma": 0.5,
+    "hardware_embedding_dim": null,
+    "value_hidden_dims": null,
+    "gat_negative_slope": null,
+    "adam_betas": null,
+    "adam_eps": null,
+    "adam_weight_decay": null,
+    "target_update": 5000,
+    "n_quantiles": 32,
+    "huber_kappa": 1.0,
+    "dropout": 0.1,
+    "max_steps": 2000000,
+    "validation_interval": 25000,
+    "early_stop_checks": 10,
+    "early_stop_fraction": 0.01,
+    "validation_qos_min": 98.0,
+    "seed": 0,
+    "epsilon_decay_steps": 200000,
+    "epsilon_final": 0.05,
+    "training_episode_starts": null,
+    "validation_start_interval": null
+  },
+  "reward": {
+    "weights": {
+      "revenue": 1.0,
+      "cost": 0.3,
+      "carbon": 0.4,
+      "tardiness": 1.0,
+      "queue": 0.5,
+      "deferral": 0.05,
+      "failure": 2.0
+    },
+    "clip": 5.0
+  }
+}

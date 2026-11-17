@@ -1,0 +1,38 @@
+{
+  "initial_states": [
+    {
+      "start_interval": null,
+      "commitment": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "generation_mw": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "storage_energy_mwh": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "initial_status_hours": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "cpn_empty": null
+    }
+  ]
+}

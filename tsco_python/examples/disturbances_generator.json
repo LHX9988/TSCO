@@ -1,0 +1,8 @@
+[
+  {
+    "kind": "generator_outage",
+    "index": 1,
+    "start_hour": 72,
+    "duration_hours": 24
+  }
+]

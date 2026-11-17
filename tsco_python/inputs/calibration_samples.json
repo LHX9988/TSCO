@@ -1,0 +1,19 @@
+{
+  "provenance": {
+    "split": "train"
+  },
+  "feature_scales": {
+    "nodes": null,
+    "edges": null,
+    "task": null,
+    "global_features": null
+  },
+  "feature_offsets": {
+    "nodes": null,
+    "edges": null,
+    "task": null,
+    "global_features": null
+  },
+  "observations": null,
+  "rewards": null
+}

@@ -1,0 +1,10 @@
+[
+  {
+    "kind": "line_outage",
+    "index": null,
+    "from_bus_id": 10,
+    "to_bus_id": 21,
+    "start_hour": 96,
+    "duration_hours": 24
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "feature_scales": {
+    "nodes": null,
+    "edges": null,
+    "task": null,
+    "global_features": null
+  },
+  "feature_offsets": {
+    "nodes": null,
+    "edges": null,
+    "task": null,
+    "global_features": null
+  },
+  "reward_scales": {
+    "revenue": null,
+    "cost": null,
+    "carbon": null,
+    "tardiness": null
+  },
+  "provenance": {
+    "split": "train"
+  }
+}
