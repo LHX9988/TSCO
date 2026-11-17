@@ -22,8 +22,7 @@ def observation(n=3, seed=3):
 
 
 def config(**kwargs):
-    # Explicit unit-test fixture values exercise code paths. They are not
-    # manuscript settings or a recommended training configuration.
+    # Fixture values for unit tests only.
     settings = dict(seed=5, replay_capacity=64, warmup_steps=0, batch_size=4,
                     target_update=2, n_step=3, dropout=0.0, torch_threads=1,
                     hardware_embedding_dim=7, value_hidden_dims=[11],
