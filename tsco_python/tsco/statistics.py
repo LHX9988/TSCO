@@ -1,4 +1,4 @@
-"""Run-level inference for TSCO experiments, without manuscript target data.
+"""Run-level inference for TSCO experiments.
 
 ``ci95`` is a two-sided Student-t confidence-interval *half-width*, not a
 standard deviation or percentile interval.  Runs remain the statistical
