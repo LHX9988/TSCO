@@ -2,7 +2,7 @@
 
 代码包含日前场景优化、Benders 分解、五分钟实时 ED、节点 LMP/MCI、DAG 任务调度、可行性屏蔽、CS-GAQR-DQN 训练与评价。
 
-`configs/nominal.json` 保留论文明确给出的参数。未给出的数值使用 JSON `null`，时序 CSV 只保留列名。填写必要输入后才能训练或仿真。
+名义配置位于 `configs/nominal.json`，输入模板位于 `inputs/`。运行前需补齐标记为 `null` 的必要参数及 CSV 数据行。
 
 ## 1. 环境
 
