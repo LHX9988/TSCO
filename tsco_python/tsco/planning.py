@@ -97,8 +97,8 @@ class BendersPlanner:
     def _required(self, name):
         value = self.settings.get(name)
         if value is None:
-raise ValueError(f'Missing required configuration: planning.{name}')
-return value
+            raise ValueError(f'Missing required configuration: planning.{name}')
+        return value
 
     def _duration_hours(self, name):
         hours = np.asarray(self._required(name), dtype=float)
