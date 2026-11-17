@@ -15,11 +15,9 @@ link serves one full-bandwidth transfer at a time; propagation does not hold
 the link after the bytes have finished transmission.  External ingress,
 storage I/O, and checkpoint creation are not modeled.
 
-Hardware power allocations, processing rates, link properties, prescribed
-resource ceilings, and task revenues must be supplied by the caller.  The
-manuscript does not provide enough numbers to derive those inputs.  A
-``reservation_fraction`` input explicitly encodes the supplied resource
-ceiling divided by hardware capacity; it is not a fitted or default factor.
+The caller supplies hardware power allocations, processing rates,
+link properties, resource ceilings, and task revenues.
+``reservation_fraction`` is the resource ceiling divided by hardware capacity.
 """
 from __future__ import annotations
 
@@ -180,8 +178,8 @@ class CPNSimulator:
                 if task.id in self.tasks or task.job_id != job.id:
                     raise ValueError(f"Non-unique task or incorrect job mapping: {task.id}")
                 if task.revenue is None:
-                    raise ValueError(f"Task {task.id} requires an explicit revenue; the manuscript does not specify its value")
-                if (not np.isfinite(task.workload) or task.workload <= 0
+raise ValueError(f"Task {task.id}: revenue is required")
+if (not np.isfinite(task.workload) or task.workload <= 0
                         or not np.isfinite(task.data_gb) or task.data_gb < 0
                         or not np.isfinite(task.revenue)
                         or len(task.demands) != 3 or not task.compatible
