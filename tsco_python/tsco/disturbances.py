@@ -1,11 +1,10 @@
 """Explicit, deterministic disturbances for frozen-policy DC-grid tests.
 
-Events contain equipment indices and half-open physical-time windows. They do
-not alter policy weights or manufacture performance results. Generator outages
-return an availability mask: callers must apply it to the existing commitment
-schedule, without rewriting the generator cost curve or pretending to replan
-an unanticipated outage. Line maintenance sets the selected branch rating to
-zero, which the DC ED module interprets as an open circuit.
+Events specify equipment indices and half-open physical-time windows.
+Policy weights remain fixed. Generator outages return an availability mask
+applied to the existing commitment schedule; this module leaves generator
+cost curves unchanged and does not trigger replanning. Line maintenance
+sets the selected branch rating to zero, representing an open circuit.
 
 Every simultaneously active combination of line outages is checked before a
 schedule is accepted. Connectivity checks establish only that maintenance is
