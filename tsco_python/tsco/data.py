@@ -322,7 +322,7 @@ def _read_planning_scenarios(path, case, intervals):
             raise ValueError("Storage modes must be -1 (discharge),0 (idle),+1 (charge)")
         hour_dt = _number(row.get("hour_dt"), "planning_scenarios.hour_dt")
         if not np.isclose(hour_dt, 1.):
-            raise ValueError("The manuscript uses one-hour day-ahead intervals")
+            raise ValueError("Day-ahead intervals must be one hour")
         expected = row.get("expected_value_storage_modes")
         if expected is not None:
             expected = _array(expected, "expected_value_storage_modes", (hours, case.n_storage), True)
